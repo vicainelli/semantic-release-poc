@@ -1,1 +1,5 @@
-console.log("Hello via Bun, from semantic-release-poc!");
+function sayHello(name: string): string {
+  return `Hello, ${name}!`;
+}
+
+console.log(sayHello("World"));
