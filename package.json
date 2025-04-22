@@ -1,0 +1,17 @@
+{
+  "name": "semantic-release-poc",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build index.ts --outdir dist --minify"
+  },
+  "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@types/bun": "latest",
+    "semantic-release": "^24.2.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
