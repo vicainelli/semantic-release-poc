@@ -19,6 +19,7 @@ jobs:
       - run: |
           bun install
           bun run build
+          bun run test:ci
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4

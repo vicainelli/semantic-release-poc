@@ -3,6 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
+    "test": "bun test *.test.{js,jsx,ts,tsx}",
+    "test:watch": "bun test *.test.{js,jsx,ts,tsx} --watch",
+    "test:ci": "bun test *.test.{js,jsx,ts,tsx} --coverage",
     "build": "bun build index.ts --outdir dist --minify"
   },
   "devDependencies": {
