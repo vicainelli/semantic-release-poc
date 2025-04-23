@@ -16,7 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
-      - run: |
+
+      - name: Snstall dependencies, build, and test
+        run: |
           bun install
           bun run build
           bun run test:ci
