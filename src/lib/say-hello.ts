@@ -1,3 +1,3 @@
 type GreetingFunction = (name: string) => string;
 
-export const sayHello: GreetingFunction = (name) => `Hello, ${name}!`;
+export const sayHello: GreetingFunction = (name) => `Hello, ${name}`;
