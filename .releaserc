@@ -1,0 +1,40 @@
+{
+  "branches": ["main"],
+  "plugins": [
+    ["@semantic-release/commit-analyzer", {
+      "preset": "angular",
+      "releaseRules": [
+        {"type": "docs", "release": "patch"},
+        {"type": "refactor", "release": "patch"},
+        {"type": "style", "release": "patch"},
+        {"type": "perf", "release": "patch"},
+        {"type": "test", "scope": "core-*", "release": "minor"}
+      ]
+    }],
+    ["@semantic-release/release-notes-generator", {
+      "preset": "angular",
+      "presetConfig": {
+        "types": [
+          {"type": "feat", "section": "✨ Features"},
+          {"type": "fix", "section": "🐛 Bug Fixes"},
+          {"type": "perf", "section": "⚡️ Performance"},
+          {"type": "refactor", "section": "♻️ Refactoring"},
+          {"type": "docs", "section": "📝 Documentation"},
+          {"type": "test", "section": "✅ Tests"},
+          {"type": "build", "section": "📦 Build"},
+          {"type": "ci", "section": "👷 CI"},
+          {"type": "chore", "hidden": true}
+        ]
+      }
+    }],
+    ["@semantic-release/changelog", {
+      "changelogFile": "CHANGELOG.md",
+      "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file."
+    }],
+    ["@semantic-release/git", {
+      "assets": ["package.json", "CHANGELOG.md"],
+      "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+    }],
+    "@semantic-release/github"
+  ]
+}
