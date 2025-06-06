@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.1](https://github.com/vicainelli/semantic-release-poc/compare/v1.4.0...v1.4.1) (2025-06-06)
+
 # [1.4.0](https://github.com/vicainelli/semantic-release-poc/compare/v1.3.0...v1.4.0) (2025-06-06)
 
 
