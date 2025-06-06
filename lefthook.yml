@@ -1,0 +1,11 @@
+pre-commit:
+  parallel: true
+  commands:
+    biome_check:
+      run: bun run biome:check
+      skip: false
+commit-msg:
+  commands:
+    conventional_commit:
+      run: bunx commitlint --edit $1
+      skip: false
