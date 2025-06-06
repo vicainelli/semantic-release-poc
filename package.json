@@ -1,20 +1,23 @@
 {
-  "name": "semantic-release-poc-vcainelli",
-  "module": "index.ts",
-  "type": "module",
-  "scripts": {
-    "test": "bun test *.test.{js,jsx,ts,tsx}",
-    "test:watch": "bun test *.test.{js,jsx,ts,tsx} --watch",
-    "test:ci": "bun test *.test.{js,jsx,ts,tsx} --coverage",
-    "build": "bun build index.ts --outdir dist --minify"
-  },
-  "devDependencies": {
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^11.0.1",
-    "@types/bun": "latest",
-    "semantic-release": "^24.2.3"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  }
+	"name": "semantic-release-poc-vcainelli",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"test": "bun test *.test.{js,jsx,ts,tsx}",
+		"test:watch": "bun test *.test.{js,jsx,ts,tsx} --watch",
+		"test:ci": "bun test *.test.{js,jsx,ts,tsx} --coverage",
+		"build": "bun build index.ts --outdir dist --minify",
+		"biome:check": "bunx biome check .",
+		"biome:write": "bunx biome check . --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.0-beta.6",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/github": "^11.0.1",
+		"@types/bun": "latest",
+		"semantic-release": "^24.2.3"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	}
 }
