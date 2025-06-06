@@ -13,6 +13,5 @@ module.exports = {
 		"scope-case": [2, "always", "lower-case"],
 		"type-empty": [0], // Disable misleading error
 		"subject-empty": [0], // Disable misleading error
-		// Removed invalid rule: "header-pattern-required"
 	},
 };
