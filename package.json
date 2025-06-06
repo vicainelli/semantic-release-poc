@@ -3,9 +3,9 @@
 	"module": "index.ts",
 	"type": "module",
 	"scripts": {
-		"test": "bun test *.test.{js,jsx,ts,tsx}",
-		"test:watch": "bun test *.test.{js,jsx,ts,tsx} --watch",
-		"test:ci": "bun test *.test.{js,jsx,ts,tsx} --coverage",
+		"test": "bun test",
+		"test:watch": "bun test --watch",
+		"test:ci": "bun test --coverage",
 		"build": "bun build index.ts --outdir dist --minify",
 		"biome:check": "bunx biome check .",
 		"biome:write": "bunx biome check . --write"
