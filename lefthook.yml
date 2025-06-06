@@ -9,3 +9,8 @@ commit-msg:
     conventional_commit:
       run: bunx commitlint --edit $1
       skip: false
+unit-tests:
+  commands:
+    bun_test:
+      run: bun run test:ci
+      skip: false
